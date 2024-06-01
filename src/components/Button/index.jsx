@@ -1,8 +1,10 @@
 import React from 'react'
-
-const Button = () => {
+import * as C from "./style";
+const Button = ({Text,onClick,Type = "button"}) => {
   return (
-    <div>Button</div>
+    <C.Button type={Type} onClick={onClick}>
+      {Text}
+    </C.Button>
   )
 }
 
