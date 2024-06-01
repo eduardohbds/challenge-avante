@@ -1,8 +1,13 @@
 import React from 'react'
-
-const Input = () => {
+import * as C from "./styles";
+const Input = ({ type, placeholder, value, onChange }) => {
   return (
-    <div>Input</div>
+    <C.Input
+      value={value}
+      onChange={onChange}
+      type={type}
+      placeholder={placeholder}
+    />
   )
 }
 
